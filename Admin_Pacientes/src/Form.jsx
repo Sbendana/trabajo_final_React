@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import './Form.css'
+
 export default function Form() {
     const [pacientes, setPacientes] = useState([])
     const [mascota, setMascota] = useState("")
@@ -17,7 +19,7 @@ export default function Form() {
 
     return (
         <div>
-            <form className='inputForm' action="">
+            <form className='Form' action="">
                 <label htmlFor="mascota">Nombre Mascota </label>
                 <input id='mascota' onChange={(e) => { setMascota(e.target.value) }} value={mascota} type="text" />
                 <label htmlFor="">Nombre Dueño</label>
