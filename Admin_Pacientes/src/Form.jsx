@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './Form.css'
 
-export default function Form() {
-    const [pacientes, setPacientes] = useState([])
+export default function Form({pacientes, setPacientes}) {
+
     const [mascota, setMascota] = useState("")
     const [dueño, setDueño] = useState("")
 
